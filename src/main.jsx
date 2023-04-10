@@ -10,11 +10,12 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 // components import
 import Home from "./components/Home";
 import Statistics from "./components/Statistics";
-import AppliedJob from "./components/AppliedJob";
+import AppliedJobs from "./components/AppliedJobs";
 import Blog from "./components/Blog";
 import { categoriesAndJobsLoader } from "./Loader/categoriesAndJobsLoader";
 import JobDetails from "./components/JobDetails";
 import { jobLoader } from "./Loader/jobLoader";
+import { appliedJobLoader } from "./Loader/appliedJobLoader";
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,8 @@ const router = createBrowserRouter([
       },
       {
         path: "applied-jobs",
-        element: <AppliedJob />,
+        element: <AppliedJobs />,
+        loader: appliedJobLoader,
       },
       {
         path: "blog",

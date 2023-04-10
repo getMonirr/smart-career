@@ -17,7 +17,7 @@ const JobDetailsCard = ({ job }) => {
   } = job;
   return (
     <div>
-      <div className="card w-[424px] bg-base-100">
+      <div className="card w-full lg:w-[424px] bg-base-100">
         <div className="card-body job-details-bg rounded-lg p-7">
           <div>
             <h2 className="card-title text-xl font-extrabold text-d1">
