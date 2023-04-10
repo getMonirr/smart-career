@@ -36,7 +36,7 @@ const FeaturedJob = ({ job }) => {
         </p>
       </div>
       <Link to={`/job/${id}`}>
-        <Button className={`lg:px-4 lg:py-3 mt-9`}>View Details</Button>
+        <Button className="lg:px-[18px] lg:py-[10px] mt-9">View Details</Button>
       </Link>
     </div>
   );
