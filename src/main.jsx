@@ -13,7 +13,7 @@ import Statistics from "./components/Statistics";
 import AppliedJob from "./components/AppliedJob";
 import Blog from "./components/Blog";
 import Hero from "./components/Hero";
-import { categoryLoader } from "./Loader/CategoryLoader";
+import { categoriesAndJobsLoader } from "./Loader/categoriesAndJobsLoader";
 
 const router = createBrowserRouter([
   {
@@ -23,13 +23,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: categoryLoader,
-        children: [
-          {
-            path: "/",
-            element: <Hero />,
-          },
-        ],
+        loader: categoriesAndJobsLoader,
       },
       {
         path: "statistics",

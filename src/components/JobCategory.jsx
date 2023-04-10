@@ -2,7 +2,6 @@ import React from "react";
 
 const JobCategory = ({ category }) => {
   const { name, jobs, img } = category;
-  console.log(category);
 
   return (
     <div className="p-10 hero-bg rounded-lg">
