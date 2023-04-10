@@ -12,6 +12,7 @@ import Home from "./components/Home";
 import Statistics from "./components/Statistics";
 import AppliedJob from "./components/AppliedJob";
 import Blog from "./components/Blog";
+import Hero from "./components/Hero";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+        children: [
+          {
+            path: "/",
+            element: <Hero />,
+          },
+        ],
       },
       {
         path: "statistics",

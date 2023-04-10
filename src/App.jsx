@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="sm-container">
+    <>
       <div>
         <Header />
       </div>
@@ -12,7 +12,7 @@ const App = () => {
         <Outlet />
       </div>
       <div></div>
-    </div>
+    </>
   );
 };
 

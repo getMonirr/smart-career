@@ -1,10 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.sm-container{
-    @apply px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 container
+.sm-container {
+  @apply px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 container;
 }
-.active{
-    @apply text-red-600 text-transparent bg-clip-text bg-gradient-to-r from-sm-bg1 to-sm-bg2
+.active {
+  @apply text-red-600 text-transparent bg-clip-text bg-gradient-to-r from-sm-bg1 to-sm-bg2;
+}
+
+.hero-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(126, 144, 254, 0.05) 0%,
+    rgba(152, 115, 255, 0.05) 100%
+  );
 }
