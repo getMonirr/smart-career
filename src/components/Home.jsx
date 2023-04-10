@@ -1,10 +1,14 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+
+// components import
+import Hero from "./Hero";
+import JobCategories from "./JobCategories";
 
 const Home = () => {
   return (
     <div>
-      <Outlet />
+      <Hero />
+      <JobCategories />
     </div>
   );
 };
