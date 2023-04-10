@@ -1,5 +1,5 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useRouteError } from "react-router-dom";
 
 // components import
 import Button from "./Button";
@@ -9,13 +9,13 @@ import DetailsCommonCompo from "./DetailsCommonCompo";
 import { addToDataBase } from "../utilities/fakedb";
 
 const JobDetails = () => {
+  const { data } = useRouteError();
   // job load
   const job = useLoaderData();
   const { id } = job;
 
   // handle job apply
   const handleJobApply = (id) => {
-    console.log(id);
     addToDataBase(id);
   };
 

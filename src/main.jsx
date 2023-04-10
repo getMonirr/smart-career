@@ -16,11 +16,13 @@ import { categoriesAndJobsLoader } from "./Loader/categoriesAndJobsLoader";
 import JobDetails from "./components/JobDetails";
 import { jobLoader } from "./Loader/jobLoader";
 import { appliedJobLoader } from "./Loader/appliedJobLoader";
+import ErrorPage from "./components/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",

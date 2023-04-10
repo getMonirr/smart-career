@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import DetailsCommonCompo from "./DetailsCommonCompo";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import AppliedJob from "./AppliedJob";
+import Button from "./Button";
 
 const AppliedJobs = () => {
   const appliedJobs = useLoaderData();
@@ -25,20 +26,32 @@ const AppliedJobs = () => {
     <>
       <DetailsCommonCompo>Applied Jobs</DetailsCommonCompo>
       <div className="sm-container my-32">
-        <div className="text-end mb-8">
-          <select
-            onChange={handleFilter}
-            className="select select-bordered w-32 max-w-xs rounded-lg"
-          >
-            <option disabled value>
-              Filter By
-            </option>
-            <option>All</option>
-            <option>Remote</option>
-            <option>Onsite</option>
-          </select>
-        </div>
+        {filteredJob.length > 0 && (
+          <div className="text-end mb-8">
+            <select
+              onChange={handleFilter}
+              className="select select-bordered w-32 max-w-xs rounded-lg"
+            >
+              <option disabled value>
+                Filter By
+              </option>
+              <option>All</option>
+              <option>Remote</option>
+              <option>Onsite</option>
+            </select>
+          </div>
+        )}
         <div>
+          {filteredJob.length === 0 && (
+            <div>
+              <h1 className="text-2xl font-extrabold text-d2 mb-4">
+                Currently you have no applied job
+              </h1>
+              <Link to="/">
+                <Button>Find Job</Button>
+              </Link>
+            </div>
+          )}
           {filteredJob.map((jb) => (
             <AppliedJob key={jb.id} appliedJob={jb} />
           ))}
