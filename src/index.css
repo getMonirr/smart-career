@@ -7,11 +7,13 @@
   @apply px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 container;
 }
 .active {
-  @apply  text-transparent bg-clip-text bg-gradient-to-r from-sm-bg1 to-sm-bg2;
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-sm-bg1 to-sm-bg2;
 }
-.jobs-btn{
-  @apply border-sm-bg2 border px-5 py-2 rounded-md text-base font-extrabold active
+.jobs-btn {
+  @apply border-sm-bg2 border px-5 py-2 rounded-md text-base font-extrabold active;
 }
+
+/* custom css */
 .hero-bg {
   background: linear-gradient(
     90deg,
@@ -27,3 +29,10 @@
   );
 }
 
+.job-details-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(126, 144, 254, 0.1) 0%,
+    rgba(152, 115, 255, 0.1) 100%
+  );
+}

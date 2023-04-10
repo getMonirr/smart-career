@@ -34,13 +34,13 @@ const FeaturedJobs = () => {
           <FeaturedJob key={j.id} job={j} />
         ))}
       </div>
-      <div
+      <p
         className={`text-center mb-32 ${
           showAll.length === jobs.length && "hidden"
         }`}
       >
         <Button handleOnClick={handleSeeAllJobs}>See All Jobs</Button>
-      </div>
+      </p>
     </div>
   );
 };

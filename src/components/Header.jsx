@@ -17,6 +17,14 @@ export const Header = () => {
           <ul className="flex items-center hidden space-x-8 lg:flex mx-auto">
             <li>
               <NavLink
+                to="/"
+                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
                 to="/statistics"
                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
               >
