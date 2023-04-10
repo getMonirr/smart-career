@@ -23,6 +23,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
+    loader: appliedJobLoader,
     children: [
       {
         path: "/",
