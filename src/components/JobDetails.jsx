@@ -9,7 +9,6 @@ import DetailsCommonCompo from "./DetailsCommonCompo";
 import { addToDataBase } from "../utilities/fakedb";
 
 const JobDetails = () => {
-  const { data } = useRouteError();
   // job load
   const job = useLoaderData();
   const { id } = job;
