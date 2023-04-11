@@ -21,7 +21,7 @@ This is a simple Job market app. In home page have a featured job section where 
 7. ### Applied Job Saved in DataBase.
    ---> all applied jobs save to the database. if users come back they can see their previously applied job. (we use local storage for the database)
 
-## Technolgy used in this app
+## Technology used in this app
 
 #
 

@@ -7,18 +7,18 @@ import { Link } from "react-router-dom";
 const AppliedJob = ({ appliedJob }) => {
   const { logo, title, name, type, timeType, salary, address, id } = appliedJob;
   return (
-    <div className="flex items-center gap-8 p-7 border rounded-lg border-d6 mb-6">
+    <div className="md:flex items-center gap-8 p-7 border rounded-lg border-d6 mb-6">
       <div className="bg-d6 rounded-lg p-16">
-        <img src={logo} alt={title} />
+        <img  src={logo} alt={title} />
       </div>
-      <div className="flex justify-between items-center flex-grow">
+      <div className="md:flex justify-between items-center flex-grow">
         <div>
-          <h2 className="font-extrabold text-2xl text-d2 leading-8 mb-1">
+          <h2 className="font-extrabold text-2xl text-d2 leading-8 mb-1 mt-4 md:mt-0">
             {" "}
             {title}{" "}
           </h2>
           <h3 className="text-d3 font-semibold text-xl mb-1">{name}</h3>
-          <div className="my-4">
+          <div className="my-4 space-y-4 md:space-y-0">
             <button className="jobs-btn mr-4">{type}</button>
             <button className="jobs-btn">{timeType}</button>
           </div>
@@ -37,7 +37,7 @@ const AppliedJob = ({ appliedJob }) => {
             </p>
           </div>
         </div>
-        <div>
+        <div className="mt-4 md:mt-0">
           <Link to={`../job/${id}`}>
             <Button className="lg:px-[18px] lg:py-[10px]">View Details</Button>
           </Link>

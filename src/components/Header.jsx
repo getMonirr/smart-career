@@ -74,7 +74,7 @@ export const Header = () => {
               </svg>
             </button>
             {isMenuOpen && (
-              <div className="absolute top-0 left-0 w-full">
+              <div className="absolute top-0 left-0 w-full z-40">
                 <div className="p-5 bg-white border rounded shadow-sm">
                   <div className="flex items-center justify-between mb-4">
                     <div>
@@ -102,6 +102,14 @@ export const Header = () => {
                   </div>
                   <nav>
                     <ul className="space-y-4">
+                      <li>
+                        <NavLink
+                          to="/"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                        >
+                          Home
+                        </NavLink>
+                      </li>
                       <li>
                         <NavLink
                           to="/statistics"

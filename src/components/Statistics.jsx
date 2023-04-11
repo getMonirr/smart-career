@@ -70,7 +70,7 @@ const Statistics = () => {
     <>
       <DetailsCommonCompo>Assignment Statistics</DetailsCommonCompo>
       <div className="sm-container">
-        <div className="flex justify-evenly items-center">
+        <div className="md:flex justify-evenly items-center">
           <div>
             <RadarChart
               cx={250}
@@ -108,8 +108,8 @@ const Statistics = () => {
             </p>
           </div>
         </div>
-        <h4 className="text-3xl font-extrabold text-d1 text-center">
-          🔥This is statistics of from Assignment 1 to 8 🔥{" "}
+        <h4 className="text-base mt-8 md:text-3xl font-extrabold text-d1 text-center">
+          🔥This is statistics of Assignment from  1 to 8 🔥{" "}
         </h4>
       </div>
     </>

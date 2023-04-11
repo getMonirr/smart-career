@@ -3,7 +3,7 @@ import React from 'react';
 const JobDetailsDesc = ({job}) => {
     const { description, responsibility, edu_requirements, experiences } = job;
     return (
-        <div>
+        <div className='mb-16 lg:mb-0'>
             <div className="font-extrabold text-base leading-8 space-y-6 text-d1">
           <p>
             Job Description:{" "}

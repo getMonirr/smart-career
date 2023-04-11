@@ -24,26 +24,26 @@ const JobDetailsCard = ({ job }) => {
               Job Details
             </h2>
             <hr className="my-6 border border-sm-bg1 border-opacity-30" />
-            <p className="inline-flex text-lg font-extrabold text-d2 mb-4">
+            <p className="inline-flex text-sm md:text-lg font-extrabold text-d2 mb-4">
               {" "}
               <img className="mr-2" src={colorDollar} alt="salary" />
               Salary:
-              <span className="font-medium text-d3">
-                {salary} {"(Per Month)"}
+              <span className="font-medium text-d3 flex">
+                {salary} <span className="hidden md:block">{"(Per Month)"}</span>
               </span>
             </p>
-            <p className="inline-flex gap-2 text-lg font-extrabold text-d2">
+            <p className="inline-flex md:gap-2 text-sm md:text-lg font-extrabold text-d2">
               {" "}
-              <img src={titleIcon} alt="title" />
+              <img className="mr-2" src={titleIcon} alt="title" />
               Job Title: <span className="font-medium text-d3">{title}</span>
             </p>
           </div>
           <div>
             <h2 className="card-title">Contact Information</h2>
             <hr className="my-6 border border-sm-bg1 border-opacity-30" />
-            <p className="inline-flex gap-2 text-lg font-extrabold text-d2 mb-4">
+            <p className="inline-flex md:gap-2 md:text-lg font-extrabold text-d2 mb-4">
               {" "}
-              <img src={phoneIcon} alt="phone" />
+              <img className="mr-2" src={phoneIcon} alt="phone" />
               Phone: <span className="font-medium text-d3">{phone}</span>
             </p>
             <p className="inline-flex gap-2 text-lg font-extrabold text-d2 mb-4">
