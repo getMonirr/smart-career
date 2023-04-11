@@ -2,6 +2,7 @@ import React, { createContext } from "react";
 import { Header } from "./components/Header";
 import { Outlet, useLoaderData } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
+import Footer from "./components/Footer";
 
 export const AppliedJobsContext = createContext([]);
 
@@ -16,7 +17,9 @@ const App = () => {
         <div>
           <Outlet />
         </div>
-        <div></div>
+        <div>
+          <Footer />
+        </div>
         <Toaster />
       </AppliedJobsContext.Provider>
     </>

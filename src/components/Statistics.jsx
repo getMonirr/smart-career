@@ -108,7 +108,7 @@ const Statistics = () => {
             </p>
           </div>
         </div>
-        <h4 className="text-base mt-8 md:text-3xl font-extrabold text-d1 text-center">
+        <h4 className="text-base mt-8 md:text-3xl font-extrabold text-d1 text-center mb-8">
           🔥This is statistics of Assignment from  1 to 8 🔥{" "}
         </h4>
       </div>
