@@ -17,7 +17,6 @@ import JobDetails from "./components/JobDetails";
 import { jobLoader } from "./Loader/jobLoader";
 import { appliedJobLoader } from "./Loader/appliedJobLoader";
 import ErrorPage from "./components/ErrorPage";
-import { questionLoader } from "./Loader/questionsLoader";
 
 const router = createBrowserRouter([
   {
@@ -48,7 +47,6 @@ const router = createBrowserRouter([
       {
         path: "blogs",
         element: <Blogs />,
-        loader: questionLoader,
       },
     ],
   },
