@@ -6,8 +6,8 @@ export const smFetcher = async (url) => {
 
 export const categoriesAndJobsLoader = async () => {
 
-    const categories = await smFetcher('../categories.json');
-    const jobs = await smFetcher('../jobs.json');
+    const categories = await smFetcher('/categories.json');
+    const jobs = await smFetcher('/jobs.json');
 
     return { categories, jobs }
 }

@@ -11,12 +11,13 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./components/Home";
 import Statistics from "./components/Statistics";
 import AppliedJobs from "./components/AppliedJobs";
-import Blog from "./components/Blog";
+import Blogs from "./components/Blogs";
 import { categoriesAndJobsLoader } from "./Loader/categoriesAndJobsLoader";
 import JobDetails from "./components/JobDetails";
 import { jobLoader } from "./Loader/jobLoader";
 import { appliedJobLoader } from "./Loader/appliedJobLoader";
 import ErrorPage from "./components/ErrorPage";
+import { questionLoader } from "./Loader/questionsLoader";
 
 const router = createBrowserRouter([
   {
@@ -45,8 +46,9 @@ const router = createBrowserRouter([
         loader: appliedJobLoader,
       },
       {
-        path: "blog",
-        element: <Blog />,
+        path: "blogs",
+        element: <Blogs />,
+        loader: questionLoader,
       },
     ],
   },
