@@ -26,26 +26,25 @@ const AppliedJobs = () => {
     <>
       <DetailsCommonCompo>Applied Jobs</DetailsCommonCompo>
       <div className="sm-container my-32">
-        {filteredJob.length > 0 && (
-          <div className="text-end mb-8">
-            <select
-              onChange={handleFilter}
-              className="select select-bordered w-32 max-w-xs rounded-lg"
-            >
-              <option disabled value>
-                Filter By
-              </option>
-              <option>All</option>
-              <option>Remote</option>
-              <option>Onsite</option>
-            </select>
-          </div>
-        )}
+        <div className="text-end mb-8">
+          <select
+            onChange={handleFilter}
+            className="select select-bordered w-32 max-w-xs rounded-lg"
+          >
+            <option disabled value>
+              Filter By
+            </option>
+            <option>All</option>
+            <option>Remote</option>
+            <option>Onsite</option>
+          </select>
+        </div>
+
         <div>
           {filteredJob.length === 0 && (
             <div>
               <h1 className="text-2xl font-extrabold text-d2 mb-4">
-                Currently you have no applied job
+                Job Not Found
               </h1>
               <Link to="/">
                 <Button>Find Job</Button>
