@@ -36,6 +36,5 @@ This is a simple Job market app. In home page have a featured job section where 
 
 
 ## Live Link
-#
 * Hosted in Netlify -> [Smart Career](https://smart-career.netlify.app/)
 
