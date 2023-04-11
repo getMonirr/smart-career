@@ -9,7 +9,7 @@ const DetailsCommonCompo = ({ children }) => {
         className="text-center h-[250px] bg-no-repeat flex justify-center items-center"
         style={{
           backgroundImage: `url(${bottomBg}), linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%)`,
-          backgroundPosition: "left bottom, top right,center"
+          backgroundPosition: "left bottom, top right,center",
         }}
       >
         <h3 className="text-3xl font-extrabold text-d1">{children}</h3>

@@ -9,7 +9,7 @@ const AppliedJob = ({ appliedJob }) => {
   return (
     <div className="md:flex items-center gap-8 p-7 border rounded-lg border-d6 mb-6">
       <div className="bg-d6 rounded-lg p-16">
-        <img  src={logo} alt={title} />
+        <img src={logo} alt={title} />
       </div>
       <div className="md:flex justify-between items-center flex-grow">
         <div>

@@ -11,7 +11,11 @@ const FeaturedJob = ({ job }) => {
   return (
     <div className="p-5 lg:p-10 border rounded-lg border-d6">
       <div className="">
-        <img className="mb-8 object-cover origin-center" src={logo} alt={name} />
+        <img
+          className="mb-8 object-cover origin-center"
+          src={logo}
+          alt={name}
+        />
       </div>
       <h2 className="font-extrabold text-2xl text-d2 leading-8 mb-1">
         {" "}

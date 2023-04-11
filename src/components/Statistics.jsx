@@ -61,9 +61,9 @@ const data = [
   },
 ];
 
-const total = data.reduce((acc,cur) => acc + cur.total,0);
-const get = data.reduce((acc,cur) => acc + cur.get,0);
-const highest = data.reduce((acc,cur) => acc + cur.highest,0);
+const total = data.reduce((acc, cur) => acc + cur.total, 0);
+const get = data.reduce((acc, cur) => acc + cur.get, 0);
+const highest = data.reduce((acc, cur) => acc + cur.highest, 0);
 
 const Statistics = () => {
   return (
@@ -101,15 +101,17 @@ const Statistics = () => {
               Get Mark: <span className="font-medium text-d3">{get}</span>
             </p>
             <p className="inline-flex gap-2 text-lg font-extrabold text-d2">
-              Missing Mark: <span className="font-medium text-d3">{total - get}</span>
+              Missing Mark:{" "}
+              <span className="font-medium text-d3">{total - get}</span>
             </p>
             <p className="inline-flex gap-2 text-lg font-extrabold text-d2">
-              Highest Mark: <span className="font-medium text-d3">{highest}</span>
+              Highest Mark:{" "}
+              <span className="font-medium text-d3">{highest}</span>
             </p>
           </div>
         </div>
         <h4 className="text-base mt-8 md:text-3xl font-extrabold text-d1 text-center mb-8">
-          🔥This is statistics of Assignment from  1 to 8 🔥{" "}
+          🔥This is statistics of Assignment from 1 to 8 🔥{" "}
         </h4>
       </div>
     </>

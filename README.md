@@ -7,35 +7,35 @@ This is a simple Job market app. In home page have a featured job section where 
 #
 
 1. ### Navigation bar
-   ---> you can visit anywhere in this app through this.
+   * you can visit anywhere in this app through this.
 2. ### Category list
-   ---> Users see all categories at a glance on the home page through the category section.
+   * Users see all categories at a glance on the home page through the category section.
 3. ### Featured job
-   ---> Here is the main observable feature of this app. Firstly users see some job overviews and then they can see all jobs by clicking the 'see all jobs' button. Secondly, they can see full details for a particular job by clicking the 'view details on the job details page.
+   * Here is the main observable feature of this app. Firstly users see some job overviews and then they can see all jobs by clicking the 'see all jobs' button. Secondly, they can see full details for a particular job by clicking the 'view details on the job details page.
 4. ### Apply for a job
-   ---> user can apply for a job. user cannot be applied multiple times.
+   * user can apply for a job. user cannot be applied multiple times.
 5. ### See the applied job
-   ---> user can see their applied job by navigating the 'applied jobs' link in the header menu.
+   * user can see their applied job by navigating the 'applied jobs' link in the header menu.
 6. ### Filter Jobs
-   ---> they can filter their applied job by a filter selection button with 'remote' or 'on-site'.
+   * they can filter their applied job by a filter selection button with 'remote' or 'on-site'.
 7. ### Applied Job Saved in DataBase.
-   ---> all applied jobs save to the database. if users come back they can see their previously applied job. (we use local storage for the database)
+   * all applied jobs save to the database. if users come back they can see their previously applied job. (we use local storage for the database)
 
 ## Technology used in this app
 
 #
 
-1. React (latest version)
-2. React Router Dom
-3. TailWind css
-4. DaisyUi
-5. React Hot Toast
-6. Hero Icons
-7. Rechart
+* React (latest version)
+* React Router Dom
+* TailWind css
+* DaisyUi
+* React Hot Toast
+* Hero Icons
+* Rechart
 
 
 
 ## Live Link
 #
-Hosted in Netlify -> [Smart Career](https://smart-career.netlify.app/)
+* Hosted in Netlify -> [Smart Career](https://smart-career.netlify.app/)
 

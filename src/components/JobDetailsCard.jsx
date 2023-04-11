@@ -29,7 +29,8 @@ const JobDetailsCard = ({ job }) => {
               <img className="mr-2" src={colorDollar} alt="salary" />
               Salary:
               <span className="font-medium text-d3 flex">
-                {salary} <span className="hidden md:block">{"(Per Month)"}</span>
+                {salary}{" "}
+                <span className="hidden md:block">{"(Per Month)"}</span>
               </span>
             </p>
             <p className="inline-flex md:gap-2 text-sm md:text-lg font-extrabold text-d2">

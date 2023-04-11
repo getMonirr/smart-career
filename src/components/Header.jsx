@@ -10,7 +10,7 @@ export const Header = () => {
       <div className="py-8 sm-container">
         <div className="relative flex items-center justify-between">
           <NavLink to="/" className="inline-flex items-center">
-            <span className="ml-2 md:text-xl font-bold tracking-wide text-gray-800 md:uppercase">
+            <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 md:uppercase">
               Smart Career
             </span>
           </NavLink>
@@ -48,11 +48,11 @@ export const Header = () => {
               </NavLink>
             </li>
           </ul>
-          <button>
+          <div className="hidden md:block">
             <NavLink to="/">
               <Button>Start Applying</Button>
             </NavLink>
-          </button>
+          </div>
           <div className="lg:hidden">
             <button
               className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
