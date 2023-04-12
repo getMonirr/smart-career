@@ -11,19 +11,20 @@ import { toast } from "react-hot-toast";
 import { AppliedJobsContext } from "../App";
 
 const JobDetails = () => {
-  const appliedJob = useContext(AppliedJobsContext);
+  const [appliedJobs, setAppliedJobs] = useContext(AppliedJobsContext);
 
   // job load
   const job = useLoaderData();
   const { id } = job;
 
   // handle job apply
-  const handleJobApply = (id) => {
+  const handleJobApply = (job) => {
     addToDataBase(id);
-    const applied = appliedJob.find((ajb) => ajb.id === id);
+    const applied = appliedJobs.find((ajb) => ajb.id === job.id);
     if (applied) {
       toast.error("Already Applied");
     } else {
+      setAppliedJobs([...appliedJobs, job]);
       toast.success("Applied Successfully");
     }
   };
@@ -37,7 +38,7 @@ const JobDetails = () => {
           <div>
             <JobDetailsCard job={job} />
             <Button
-              handleOnClick={() => handleJobApply(id)}
+              handleOnClick={() => handleJobApply(job)}
               className="w-full mt-6"
             >
               Apply Now
